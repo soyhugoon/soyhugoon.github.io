@@ -1,73 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-    font-family: "Lexend", serif;
-    user-select: none;
-}
-
-nav {
-    justify-content: center;
-    background-color: transparent;
-    padding: 20px 0;
-}
-
-.textnav {
-    color: white;
-    background-color: transparent;
-    margin: 0 10px;
-    font-size: 20px;
-    text-decoration: none;
-    text-align: center;
-}
-
-img {
-    pointer-events: none;
-}
-
-html {
-    scroll-behavior: smooth;
-    background-color: black;
-    color: white;
-    text-align: center;
-}
-
-h1 {
-    font-size: 100px;
-}
-
-h2 {
-    font-size: 50px;
-    font-weight: 300;
-}
-
-h4 {
-    font-size: 30px;
-    font-weight: 300;
-}
-
-a {
-    color: rgb(170, 0, 255);
-}
-
-header {
-    display: flex;
-    justify-content: center;
-    flex: wrap;
-    padding: 100px 0;
-    user-select: none;
-}
-
-.fondomorado {
-    background-image: url(fondo.png);
-    background-size: cover;
-    background-position: center;
-}
-
-.fondomusica {
-    background-image: url(https://wallpapers.com/images/hd/black-and-white-music-1920-x-1080-wallpaper-zvzo3yudjgglb910.jpg);
-    background-size: cover;
-    background-position: 0 650px;
-}
 
 .headertext {
     display: flex;
@@ -77,18 +7,201 @@ header {
     color: white;
 }
 
-.blacksection {
+.fondomorado {
+    background-image: url(fondo.png);
+    background-size: cover;
+    background-position: center;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Lexend", serif;
+    user-select: none;
+}
+
+a {
+    color: rgb(170, 0, 255);
+}
+
+.textnav {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+    text-align: center;
+}
+    
+html {
+    scroll-behavior: smooth;
     background-color: black;
     color: white;
-    padding: 40px 20px;
     text-align: center;
 }
 
-.videosyt {
-    margin: 10px 10px;
-    border-radius: 10px;
+.fondomusica {
+    background-image: url(https://larepublica.es/wp-content/uploads/2017/01/mu%CC%81sica-para-entrenar.jpg);    
+    background-size: cover;
+    background-position: center;
 }
 
-.enlacespoti {
-    margin: 10px;
+.blacksection {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+img {
+    pointer-events: none;
+}
+
+#linksocial {
+    pointer-events: all;
+}
+
+@media (min-width: 900px) {
+    
+    nav {
+        justify-content: center;
+        background-color: transparent;
+        padding: 20px 0;
+    }
+    
+    .textnav {
+        margin: 0 10px;
+        font-size: 20px;
+    }
+    
+    h1 {
+        font-size: 100px;
+    }
+    
+    h2 {
+        font-size: 50px;
+        font-weight: 300;
+    }
+    
+    h4 {
+        font-size: 30px;
+        font-weight: 300;
+    }
+    
+    
+    .blacksection {
+        padding: 40px 20px;
+    }
+    
+    .videosyt {
+        width: 500px;
+        height: 280px;
+        margin: 10px 10px;
+        border-radius: 10px;
+    }
+    
+    .enlacespoti {
+        margin: 5px;
+        width: 450px;
+        height: 100px;
+    }
+
+    header {
+        display: flex;
+        justify-content: center;
+        flex: wrap;
+        padding: 100px 0;
+        user-select: none;
+    }
+
+    #linksocial {
+        width: 200px; height: 200px;  margin-top: 25px; margin-bottom: -50px;
+    }
+
+    .menumoviles {
+        width: 0%;
+        margin: 0%;
+        padding: 0%;
+        height: 0%;
+    }
+}
+
+
+@media (max-width: 900px) {
+    
+    .navmoviles {
+        color: white;
+        font-size: 50px;
+        text-decoration: none;
+        margin-bottom: 30px;
+        text-align: left;
+    }
+
+    .barranavmoviles {
+        background-color: black;
+        display:grid;
+        padding: 100px 30px;
+    }
+    
+    nav {
+        font-size: 0%;
+        width: 0%;
+        height: 0%;
+        margin: 0%;
+        padding: 0%;
+    }
+    
+    .textnav {
+        font-size: 0%;
+        width: 0%;
+        height: 0%;
+        margin: 0%;
+        padding: 0%;
+    }
+
+    .menumoviles {
+        color: white;
+        margin: 10px;
+        pointer-events: all;
+    }
+
+    .enlacespoti {
+        margin: 5px;
+        width: 270px;
+        height: 80px;
+    }
+
+    .blacksection {
+        padding: 10px 8px;
+    }
+
+    .videosyt {
+        width: 290px;
+        height: 160px;
+        margin: 10px 10px;
+        border-radius: 10px;
+    }
+
+    h1 {
+        font-size: 60px;
+    }
+    
+    h2 {
+        font-size: 35px;
+        font-weight: 300;
+    }
+    
+    h4 {
+        font-size: 20px;
+        font-weight: 300;
+    }
+
+    header {
+        padding: 80px 0;
+        user-select: none;
+    }
+    
+    #linksocial {
+        width: 120px; 
+        height: 120px;  
+        margin-top: 18px;
+    }
+
 }
